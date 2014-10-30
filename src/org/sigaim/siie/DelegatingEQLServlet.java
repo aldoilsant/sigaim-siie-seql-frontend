@@ -69,6 +69,7 @@ public class DelegatingEQLServlet extends HttpServlet {
     	if(result==null) {
     		out.println("<p>Se ha producido un error en la consulta. Por favor, revisa la sintaxis</p>");
     	} else {
+    		out.println("<p>Total de filas: "+result.getNumberOfRows()+"</p>");
     		out.println("<p>Resultados de la consulta: </p>");
     		out.println("<div style=\"width: 100%; text-align: left\"><table>");
 			int flag=0;
